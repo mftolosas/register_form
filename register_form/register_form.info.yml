@@ -1,0 +1,6 @@
+name: Register Form
+type: module
+description: 'This is an example to register form'
+package: Mafe
+version: '8.0.0'
+core: 8.x
