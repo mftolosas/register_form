@@ -27,16 +27,13 @@ class RegisterForm extends FormBase {
       '#default_value' =>  \Drupal::state()->get('lastname'),
     );
     $form['gender'] = array(
-        '#type' => 'textfield',
-        '#title' => t('Gender'),
-        '#required' => TRUE,
-        '#default_value' =>  \Drupal::state()->get('gender'),
+      '#title' => t('Gender'),
+      '#type' => 'select',
+      '#required' => TRUE,
+      '#options' => array(t('Male'), t('Female')),
     );
     $form['age'] = array(
         '#type' => 'number',
-        '#attributes' => array(
-            'type' => 'number',
-        ),
         '#title' => t('Age'),
         '#required' => TRUE,
         '#default_value' =>  \Drupal::state()->get('age'),
